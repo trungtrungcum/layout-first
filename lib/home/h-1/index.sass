@@ -1,0 +1,70 @@
+.slide
+	.owl-carousel
+		position: relative
+		margin-bottom: 40px
+		.owl-dots
+			position: absolute
+			bottom: 1rem
+			text-align: center
+			display: block
+			width: 100%
+.cate
+	.container
+		.row
+			.col-md-6
+				.square-effect
+					position: relative
+					overflow: hidden
+					.img
+						
+						&.img-effect
+							background: rgba(255,255,255,0.5)
+							overflow: hidden
+						.wrapper
+							height: 312.65px
+							width: 100%
+							text-align: left
+							position: relative
+							display: flex
+							align-items: center
+							justify-content: center
+							img
+								height: 100%
+								opacity: 0.95
+								width: 100%
+								object-fit: cover
+							&:hover
+								img
+									transform: scale3d(1.05, 1.05, 1)
+									transition: 0.35s ease-in-out
+									opacity: 1
+				.info
+					background-color: #000
+					text-align: center
+					position: absolute
+					bottom: 0
+					width: 100%
+					opacity: 1
+					background: rgba(0,0,0,0.5)
+					h3
+						margin-top: .5rem
+						margin-bottom: 0
+						a
+							font-size: 17px
+							text-decoration: none
+							color: #fff
+							&:hover
+								color: #bb2031
+					p
+						font-style: italic
+						font-size: 12px
+						position: relative
+						color: #bb2031
+						font-weight: bold
+	.item
+		+ .item
+			margin-top: 30px
+			@media(min-width: 576px)
+				margin-top: 0
+	.box
+		position: relative
